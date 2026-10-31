@@ -1,6 +1,6 @@
 # Status
 
-Last updated 2026-10-31.
+Last updated 2026-11-01.
 
 ## The plugin
 
@@ -26,7 +26,9 @@ Renamed 2026-10-31. The wordpress.org review of 2026-10-24 (submitted as "Queue 
 slug `queue-triage-for-action-scheduler`) asked for a distinctive identifier at the start of the name. The
 plugin is now "Asyncra Queue Triage for Action Scheduler", slug `asyncra-queue-triage`; "Asyncra" had no
 matches on wordpress.org and no WordPress or job-queue product on the web (only an unrelated Rust crate).
-The menu label stays "Queue Triage". The reply to the review must ask for the new slug.
+The menu label stays "Queue Triage". The renamed zip was uploaded 2026-11-01 with a note asking for the slug
+`asyncra-queue-triage`; wordpress.org filed the note in the review ticket and the review now waits on the plugins
+team. The assigned slug was still `queue-triage-for-action-scheduler` at that point; check it changed before approval.
 
 ## Tests, 2026-10-20
 
