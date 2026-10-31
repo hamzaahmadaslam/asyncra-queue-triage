@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Queue Triage for Action Scheduler
- * Plugin URI:        https://github.com/hamzaahmadaslam/queue-triage-for-action-scheduler
+ * Plugin Name:       Asyncra Queue Triage for Action Scheduler
+ * Plugin URI:        https://github.com/hamzaahmadaslam/asyncra-queue-triage
  * Description:       A read-only report on the Action Scheduler queue: failed actions grouped by hook and error, past-due actions, stuck runs, table sizes and retention, with Site Health tests.
  * Version:           1.0.0
  * Requires at least: 6.5
@@ -10,7 +10,7 @@
  * Author URI:        https://hamzaahmadaslam.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       queue-triage-for-action-scheduler
+ * Text Domain:       asyncra-queue-triage
  *
  * @package QueueTriage
  */

@@ -1,4 +1,4 @@
-# Queue Triage for Action Scheduler
+# Asyncra Queue Triage for Action Scheduler
 
 A free WordPress plugin that explains why [Action Scheduler](https://actionscheduler.org) jobs fail or stall. Action Scheduler is the background job queue inside WooCommerce and many other plugins.
 
@@ -51,7 +51,7 @@ composer install
 vendor/bin/phpcs          # WordPress Coding Standards 3 and PHP 7.4 compatibility
 vendor/bin/phpunit        # unit tests for parsing, grouping, labels and checks
 WP_PATH=/path/to/test-wordpress bash tests/integration.sh
-bash bin/build.sh         # build/queue-triage-for-action-scheduler.zip, as shipped
+bash bin/build.sh         # build/asyncra-queue-triage.zip, as shipped
 ```
 
 The integration test needs a WordPress install used only for testing, with WooCommerce or the Action Scheduler plugin active. It adds a must-use plugin with failing callbacks, schedules a backlog, runs it with Action Scheduler's own runner, and checks the report, the screen, the Site Health tests, that nothing in the tables changed, and the case where Action Scheduler is not loaded. CI runs it on PHP 7.4 with WordPress 6.5 and Action Scheduler 3.9.2, and on PHP 8.4 with WordPress 7.1 and WooCommerce, then runs the official Plugin Check on the built plugin.

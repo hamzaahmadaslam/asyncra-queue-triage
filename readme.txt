@@ -1,4 +1,4 @@
-=== Queue Triage for Action Scheduler ===
+=== Asyncra Queue Triage for Action Scheduler ===
 Contributors: hamzaahmadaslam
 Tags: action scheduler, woocommerce, wp-cron, site health, scheduled actions
 Requires at least: 6.5
@@ -14,7 +14,7 @@ See why Action Scheduler jobs fail or stall: failures grouped by hook and error,
 
 Action Scheduler is the background job queue inside WooCommerce and many other plugins. When it goes wrong, its own screen lists the actions one row at a time, and the notice "past-due actions found; something may be wrong" does not say what is wrong.
 
-Queue Triage adds one screen under **Tools > Queue Triage** that answers the questions a store owner or a developer asks first:
+Asyncra Queue Triage adds one screen under **Tools > Queue Triage** that answers the questions a store owner or a developer asks first:
 
 * **Why are actions failing?** The newest failed actions (500 by default) are grouped by hook and by their error, with ids, dates, amounts, quoted values, email addresses and server paths taken out. 800 failures that differ only in an order number read as one group.
 * **What should I do about each group?** Each group gets a label from fixed rules: *Fix first* (a missing callback, a PHP error, rejected credentials, a deleted record), *Retry candidate, check first* (timeouts, rate limits, remote server errors) or *Review*. Each label comes with what the error usually means and what to check next.
@@ -45,7 +45,7 @@ Anything that uses Action Scheduler with its own database tables, such as WooCom
 
 = Source code =
 
-Development happens on GitHub: [hamzaahmadaslam/queue-triage-for-action-scheduler](https://github.com/hamzaahmadaslam/queue-triage-for-action-scheduler). Issues and pull requests are welcome there.
+Development happens on GitHub: [hamzaahmadaslam/asyncra-queue-triage](https://github.com/hamzaahmadaslam/asyncra-queue-triage). Issues and pull requests are welcome there.
 
 == Installation ==
 

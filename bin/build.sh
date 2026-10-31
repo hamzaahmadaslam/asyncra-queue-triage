@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Builds the plugin as it is shipped: build/queue-triage-for-action-scheduler/ and a zip next to it.
+# Builds the plugin as it is shipped: build/asyncra-queue-triage/ and a zip next to it.
 # Only the files a site needs go in; tests, docs and tooling stay out.
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
-slug="queue-triage-for-action-scheduler"
+slug="asyncra-queue-triage"
 out="$root/build/$slug"
 
 rm -rf "$root/build"

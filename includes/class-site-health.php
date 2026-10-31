@@ -35,11 +35,11 @@ class Site_Health {
 			return $tests;
 		}
 		$tests['direct']['queue_triage_queue']    = array(
-			'label' => __( 'Action Scheduler queue', 'queue-triage-for-action-scheduler' ),
+			'label' => __( 'Action Scheduler queue', 'asyncra-queue-triage' ),
 			'test'  => array( __CLASS__, 'test_queue' ),
 		);
 		$tests['direct']['queue_triage_failures'] = array(
-			'label' => __( 'Action Scheduler failures', 'queue-triage-for-action-scheduler' ),
+			'label' => __( 'Action Scheduler failures', 'asyncra-queue-triage' ),
 			'test'  => array( __CLASS__, 'test_failures' ),
 		);
 		return $tests;
@@ -77,11 +77,11 @@ class Site_Health {
 			'label'       => $check['label'],
 			'status'      => $check['status'],
 			'badge'       => array(
-				'label' => __( 'Performance', 'queue-triage-for-action-scheduler' ),
+				'label' => __( 'Performance', 'asyncra-queue-triage' ),
 				'color' => Report::GOOD === $check['status'] ? 'blue' : ( Report::CRITICAL === $check['status'] ? 'red' : 'orange' ),
 			),
 			'description' => '<p>' . esc_html( $check['detail'] ) . '</p>',
-			'actions'     => Report::GOOD === $check['status'] ? '' : '<p><a href="' . esc_url( Admin_Page::url() ) . '">' . esc_html__( 'See the Queue Triage report', 'queue-triage-for-action-scheduler' ) . '</a></p>',
+			'actions'     => Report::GOOD === $check['status'] ? '' : '<p><a href="' . esc_url( Admin_Page::url() ) . '">' . esc_html__( 'See the Queue Triage report', 'asyncra-queue-triage' ) . '</a></p>',
 			'test'        => $test,
 		);
 	}
@@ -98,8 +98,8 @@ class Site_Health {
 		$env    = $data['environment'];
 		$fields = array(
 			'version' => array(
-				'label' => __( 'Version in use', 'queue-triage-for-action-scheduler' ),
-				'value' => $env['loaded'] ? $env['version'] . ( '' !== $env['source'] ? ' (' . $env['source'] . ')' : '' ) : __( 'Not loaded', 'queue-triage-for-action-scheduler' ),
+				'label' => __( 'Version in use', 'asyncra-queue-triage' ),
+				'value' => $env['loaded'] ? $env['version'] . ( '' !== $env['source'] ? ' (' . $env['source'] . ')' : '' ) : __( 'Not loaded', 'asyncra-queue-triage' ),
 			),
 		);
 		if ( $data['has_tables'] ) {
@@ -108,11 +108,11 @@ class Site_Health {
 				$counts[] = $status . ': ' . $n;
 			}
 			$fields['counts']   = array(
-				'label' => __( 'Actions by status', 'queue-triage-for-action-scheduler' ),
+				'label' => __( 'Actions by status', 'asyncra-queue-triage' ),
 				'value' => implode( ', ', $counts ),
 			);
 			$fields['past_due'] = array(
-				'label' => __( 'Past-due actions', 'queue-triage-for-action-scheduler' ),
+				'label' => __( 'Past-due actions', 'asyncra-queue-triage' ),
 				'value' => (string) $data['past_due']['count'],
 			);
 			$bytes              = 0;
@@ -120,7 +120,7 @@ class Site_Health {
 				$bytes += $table['bytes'];
 			}
 			$fields['storage'] = array(
-				'label' => __( 'Table size', 'queue-triage-for-action-scheduler' ),
+				'label' => __( 'Table size', 'asyncra-queue-triage' ),
 				'value' => Format::bytes( $bytes ),
 			);
 			foreach ( $report['checks'] as $id => $check ) {
@@ -132,7 +132,7 @@ class Site_Health {
 			}
 		}
 		$info['queue-triage'] = array(
-			'label'  => __( 'Action Scheduler (Queue Triage)', 'queue-triage-for-action-scheduler' ),
+			'label'  => __( 'Action Scheduler (Queue Triage)', 'asyncra-queue-triage' ),
 			'fields' => $fields,
 		);
 		return $info;

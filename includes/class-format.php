@@ -24,21 +24,21 @@ class Format {
 		$seconds = max( 0, (int) $seconds );
 		if ( $seconds < MINUTE_IN_SECONDS ) {
 			/* translators: %s: number of seconds. */
-			return sprintf( _n( '%s second', '%s seconds', $seconds, 'queue-triage-for-action-scheduler' ), number_format_i18n( $seconds ) );
+			return sprintf( _n( '%s second', '%s seconds', $seconds, 'asyncra-queue-triage' ), number_format_i18n( $seconds ) );
 		}
 		if ( $seconds < HOUR_IN_SECONDS ) {
 			$n = (int) floor( $seconds / MINUTE_IN_SECONDS );
 			/* translators: %s: number of minutes. */
-			return sprintf( _n( '%s minute', '%s minutes', $n, 'queue-triage-for-action-scheduler' ), number_format_i18n( $n ) );
+			return sprintf( _n( '%s minute', '%s minutes', $n, 'asyncra-queue-triage' ), number_format_i18n( $n ) );
 		}
 		if ( $seconds < DAY_IN_SECONDS ) {
 			$n = (int) floor( $seconds / HOUR_IN_SECONDS );
 			/* translators: %s: number of hours. */
-			return sprintf( _n( '%s hour', '%s hours', $n, 'queue-triage-for-action-scheduler' ), number_format_i18n( $n ) );
+			return sprintf( _n( '%s hour', '%s hours', $n, 'asyncra-queue-triage' ), number_format_i18n( $n ) );
 		}
 		$n = (int) floor( $seconds / DAY_IN_SECONDS );
 		/* translators: %s: number of days. */
-		return sprintf( _n( '%s day', '%s days', $n, 'queue-triage-for-action-scheduler' ), number_format_i18n( $n ) );
+		return sprintf( _n( '%s day', '%s days', $n, 'asyncra-queue-triage' ), number_format_i18n( $n ) );
 	}
 
 	/**

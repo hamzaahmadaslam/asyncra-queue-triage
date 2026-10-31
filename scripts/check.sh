@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-for f in queue-triage-for-action-scheduler.php uninstall.php includes/*.php tests/fixtures/*.php tests/unit/*.php; do
+for f in asyncra-queue-triage.php uninstall.php includes/*.php tests/fixtures/*.php tests/unit/*.php; do
   php -l "$f" >/dev/null
 done
 echo "php -l: ok"

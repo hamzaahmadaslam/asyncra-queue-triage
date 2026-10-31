@@ -1,11 +1,11 @@
 # Status
 
-Last updated 2026-10-20.
+Last updated 2026-10-31.
 
 ## The plugin
 
-**Queue Triage for Action Scheduler**, slug `queue-triage-for-action-scheduler`, version 1.0.0.
-GitHub: https://github.com/hamzaahmadaslam/queue-triage-for-action-scheduler
+**Asyncra Queue Triage for Action Scheduler**, slug `asyncra-queue-triage`, version 1.0.0.
+GitHub: https://github.com/hamzaahmadaslam/asyncra-queue-triage
 
 A read-only screen under Tools > Queue Triage, two Site Health tests, a Site Health Info section and
 `wp queue-triage report`. It groups the newest failed Action Scheduler actions by hook and normalised
@@ -21,6 +21,12 @@ Automattic project, so `action-scheduler-health` would be refused. "X for Action
 pattern the guideline gives. "Queue Triage" was free on wordpress.org and matches the owner's
 `action-scheduler-triage` command-line tool. See [research.md](research.md) for the competitors and the
 rules that were checked.
+
+Renamed 2026-10-31. The wordpress.org review of 2026-10-24 (submitted as "Queue Triage for Action Scheduler",
+slug `queue-triage-for-action-scheduler`) asked for a distinctive identifier at the start of the name. The
+plugin is now "Asyncra Queue Triage for Action Scheduler", slug `asyncra-queue-triage`; "Asyncra" had no
+matches on wordpress.org and no WordPress or job-queue product on the web (only an unrelated Rust crate).
+The menu label stays "Queue Triage". The reply to the review must ask for the new slug.
 
 ## Tests, 2026-10-20
 

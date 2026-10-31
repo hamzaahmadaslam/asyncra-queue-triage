@@ -36,7 +36,7 @@ jobs:
           tools: composer:v2
           coverage: none
       - name: Syntax
-        run: for f in queue-triage-for-action-scheduler.php uninstall.php includes/*.php tests/fixtures/*.php tests/unit/*.php; do php -l "$f"; done
+        run: for f in asyncra-queue-triage.php uninstall.php includes/*.php tests/fixtures/*.php tests/unit/*.php; do php -l "$f"; done
       - run: composer install --no-interaction --no-progress
       - name: Unit tests
         run: vendor/bin/phpunit
@@ -98,4 +98,4 @@ jobs:
         run: bash bin/build.sh
       - uses: WordPress/plugin-check-action@v1
         with:
-          build-dir: build/queue-triage-for-action-scheduler
+          build-dir: build/asyncra-queue-triage

@@ -7,7 +7,7 @@ set -euo pipefail
 
 here="$(cd "$(dirname "$0")" && pwd)"
 root="$(dirname "$here")"
-slug="queue-triage-for-action-scheduler"
+slug="asyncra-queue-triage"
 : "${WP_PATH:?Set WP_PATH to a WordPress install}"
 extra=()
 if [ "$(id -u)" = "0" ]; then extra+=(--allow-root); fi
@@ -104,7 +104,7 @@ admin="$(wpc eval 'wp_set_current_user(1); set_current_screen("tools_page_queue-
 contains "the screen shows the failure table" "Failed actions by hook and error" "$admin"
 contains "hook names are escaped and shown" "<code>acme_crm_sync_contact</code>" "$admin"
 contains "the screen links to Scheduled Actions" "page=action-scheduler&#038;status=failed&#038;s=acme_crm_sync_contact" "$admin"
-contains "the support report is there" "### Queue Triage for Action Scheduler report" "$admin"
+contains "the support report is there" "### Asyncra Queue Triage for Action Scheduler report" "$admin"
 lacks "the screen has no form" "<form" "$admin"
 wpc user get qt_subscriber >/dev/null 2>&1 || wpc user create qt_subscriber qt_subscriber@example.com --role=subscriber >/dev/null
 sub="$(wpc eval '$u = get_user_by("login", "qt_subscriber"); wp_set_current_user($u->ID); QueueTriage\Admin_Page::render();' 2>&1 || true)"

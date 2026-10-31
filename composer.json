@@ -1,5 +1,5 @@
 {
-    "name": "hamzaahmadaslam/queue-triage-for-action-scheduler",
+    "name": "hamzaahmadaslam/asyncra-queue-triage",
     "description": "A read-only report on the Action Scheduler queue for WordPress.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
