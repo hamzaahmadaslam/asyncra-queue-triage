@@ -1,6 +1,6 @@
 # Status
 
-Last updated 2026-11-01.
+Last updated 2026-11-02.
 
 ## The plugin
 
@@ -28,7 +28,13 @@ plugin is now "Asyncra Queue Triage for Action Scheduler", slug `asyncra-queue-t
 matches on wordpress.org and no WordPress or job-queue product on the web (only an unrelated Rust crate).
 The menu label stays "Queue Triage". The renamed zip was uploaded 2026-11-01 with a note asking for the slug
 `asyncra-queue-triage`; wordpress.org filed the note in the review ticket and the review now waits on the plugins
-team. The assigned slug was still `queue-triage-for-action-scheduler` at that point; check it changed before approval.
+team. The assigned slug was still `queue-triage-for-action-scheduler` at that point.
+
+Checked 2026-11-02 on the Add page: the assigned slug is now `asyncra-queue-triage`, and the review status is
+"Being Reviewed: waiting on action from our plugins team" (326 plugins in the first-review queue). Nothing is
+waiting on the owner. On the renamed tree (fefe4b5 code): `scripts/check.sh` passes (PHPCS clean, 81 unit tests),
+the integration test passes 47 of 47 on WordPress 7.1.3 + WooCommerce and on WordPress 6.5.5 + Action Scheduler
+3.9.2, and Plugin Check reports no errors or warnings. The old GitHub URL redirects to the new one.
 
 ## Tests, 2026-10-20
 
