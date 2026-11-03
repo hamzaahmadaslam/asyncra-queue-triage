@@ -40,9 +40,10 @@ the integration test passes 47 of 47 on WordPress 7.1.3 + WooCommerce and on Wor
 `OWN asyncra-queue-triage/hamzaahmadaslam/24Oct26/T2 3Nov26`). A gmail.com account email is not accepted as
 proof that the account owns the Author URI domain. Chosen route: a TXT record at the root of
 hamzaahmadaslam.com (DNS on Cloudflare) with the value `wordpressorg-hamzaahmadaslam-verification`, then a
-short reply in the same email thread once the record resolves publicly. **Waiting on the owner** to add the
-record (the assistant's Cloudflare DNS change was blocked by its permission settings) and to approve the reply.
-The 90-day clock for this request runs from 2026-11-03. Plugin files were rechecked the same day: name, slug
+short reply in the same email thread once the record resolves publicly. The owner added the record; on
+2026-11-04 it resolved on both Cloudflare nameservers, 1.1.1.1 and 8.8.8.8. The reply went to plugins@wordpress.org
+in the review thread at 12:15 AM PKT on 2026-11-04. **Keep the TXT record** until the plugin is approved. The review
+is back with the plugins team; nothing waits on the owner. Plugin files were rechecked the same day: name, slug
 and text domain all match `asyncra-queue-triage`, no old slug left.
 
 Separate thread, 2026-11-03: the team said to submit the CookieConsentHQ plugin only after this one is approved
