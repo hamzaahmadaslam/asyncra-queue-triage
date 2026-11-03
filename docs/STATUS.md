@@ -36,6 +36,18 @@ waiting on the owner. On the renamed tree (fefe4b5 code): `scripts/check.sh` pas
 the integration test passes 47 of 47 on WordPress 7.1.3 + WooCommerce and on WordPress 6.5.5 + Action Scheduler
 3.9.2, and Plugin Check reports no errors or warnings. The old GitHub URL redirects to the new one.
 
+2026-11-03, 9:34 PM PKT: the reviewer confirmed the slug change and opened an ownership check (review ID
+`OWN asyncra-queue-triage/hamzaahmadaslam/24Oct26/T2 3Nov26`). A gmail.com account email is not accepted as
+proof that the account owns the Author URI domain. Chosen route: a TXT record at the root of
+hamzaahmadaslam.com (DNS on Cloudflare) with the value `wordpressorg-hamzaahmadaslam-verification`, then a
+short reply in the same email thread once the record resolves publicly. **Waiting on the owner** to add the
+record (the assistant's Cloudflare DNS change was blocked by its permission settings) and to approve the reply.
+The 90-day clock for this request runs from 2026-11-03. Plugin files were rechecked the same day: name, slug
+and text domain all match `asyncra-queue-triage`, no old slug left.
+
+Separate thread, 2026-11-03: the team said to submit the CookieConsentHQ plugin only after this one is approved
+and uploaded to SVN.
+
 ## Tests, 2026-10-20
 
 | Check | Where | Result |
