@@ -43,7 +43,9 @@ hamzaahmadaslam.com (DNS on Cloudflare) with the value `wordpressorg-hamzaahmada
 short reply in the same email thread once the record resolves publicly. The owner added the record; on
 2026-11-04 it resolved on both Cloudflare nameservers, 1.1.1.1 and 8.8.8.8. The reply went to plugins@wordpress.org
 in the review thread at 12:15 AM PKT on 2026-11-04. **Keep the TXT record** until the plugin is approved. The review
-is back with the plugins team; nothing waits on the owner. Plugin files were rechecked the same day: name, slug
+is back with the plugins team; nothing waits on the owner. Rechecked on the evening of 2026-11-04: no new
+email from the team, the record still resolves, both URIs return 200, all 138 translated strings use the text
+domain `asyncra-queue-triage`, and the banner reads "Asyncra Queue Triage for Action Scheduler". Plugin files were rechecked the same day: name, slug
 and text domain all match `asyncra-queue-triage`, no old slug left.
 
 Separate thread, 2026-11-03: the team said to submit the CookieConsentHQ plugin only after this one is approved
