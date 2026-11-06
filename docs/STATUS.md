@@ -1,6 +1,6 @@
 # Status
 
-Last updated 2026-11-02.
+Last updated 2026-11-06.
 
 ## The plugin
 
@@ -50,6 +50,13 @@ and text domain all match `asyncra-queue-triage`, no old slug left.
 
 Separate thread, 2026-11-03: the team said to submit the CookieConsentHQ plugin only after this one is approved
 and uploaded to SVN.
+
+2026-11-06: **approved and live.** The approved zip (wordpress.org/plugins/files/2026/10/31_22-24-59_asyncra-queue-triage.zip)
+has the same files as `build/asyncra-queue-triage/`. Those files went into SVN as revision 3788443: `trunk/` and
+`tags/1.0.0`, Stable tag 1.0.0. https://wordpress.org/plugins/asyncra-queue-triage/ returns 200. The SVN checkout is
+in WSL at `~/wporg-svn/asyncra-queue-triage`; the account's SVN password is separate from its login (Account &
+Security, SVN credentials). Not done yet: banner and icon images under `assets/` in SVN. The TXT record at
+hamzaahmadaslam.com can go now that the plugin is approved. The same day CookieConsentHQ was submitted.
 
 ## Tests, 2026-10-20
 
