@@ -55,8 +55,10 @@ and uploaded to SVN.
 has the same files as `build/asyncra-queue-triage/`. Those files went into SVN as revision 3788443: `trunk/` and
 `tags/1.0.0`, Stable tag 1.0.0. https://wordpress.org/plugins/asyncra-queue-triage/ returns 200. The SVN checkout is
 in WSL at `~/wporg-svn/asyncra-queue-triage`; the account's SVN password is separate from its login (Account &
-Security, SVN credentials). Not done yet: banner and icon images under `assets/` in SVN. The TXT record at
-hamzaahmadaslam.com can go now that the plugin is approved. The same day CookieConsentHQ was submitted.
+Security, SVN credentials). The banner, icons and four screenshots from `.wordpress-org/` went into SVN `assets/`
+as revision 3788513 (PNG and SVG mime types set); ps.w.org serves them. The plugin page picks them up after
+WordPress.org rebuilds it. The GitHub repository's website now points at the plugin page. The TXT record at
+hamzaahmadaslam.com is kept; it costs nothing. The same day CookieConsentHQ was submitted.
 
 ## Tests, 2026-10-20
 
